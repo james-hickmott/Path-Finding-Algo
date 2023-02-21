@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortest Path Algo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div id="overlay">
+      <div id="sticker">
+          <!-- <div id="introQuestion">
+          Would you like to display Node Info + Minimap? (May impact performance)
+        </div> -->
+        <div class="startText" id="controls">
+
+        </div>
+        <div class="startText" id="instructionsTitle">
+          INSTRUCTIONS
+        </div>
+        <div class="startText" id="instructions">
+          - You will be shown a square canvas<br>
+          - The first time you click the canvasyou will select a start node (green square)<br>
+          - The second time you click the canvas you will select an end node (orange sqaure)<br>
+          - After the above have been selected you can click, hold and drag on the canvas to create walls (black squares)<br>
+          - After all of the above you can select an algorithm to render onto the canvas with the selected nodes
+        </div>
+        <button class="startText" id="doesNotWantMinimaps">
+          CONTINUE
+          <!-- CONTINUE WITHOUT MINIMAPS (Recommended) -->
+        </button>
+        <button class="startText" id="wantsMinimaps">
+          CONTINUE WITH MINIMAPS
+        </button>
+      </div>
+      <div id="requirements">
+        This web application is functional only for PC users
+      </div>
+    </div>
+    <div id="rightSide">
+
+      <div id="buttonsContainer">
+
+        <button id="AStar">
+          A*
+          <div class="startstopA">
+            Start / Stop
+          </div>
+        </button>
+        <button id="GreedyBestFirst">
+          GREEDY
+          <div class="startstopB">
+            Start / Stop
+          </div>
+        </button>
+        <button id="ClearCanvas">
+          CLEAR
+        </button>
+        <button id="binaryTreeMaze">
+          MAZE 1
+        </button>
+        <button id="clearSolution">
+          CLEAR SOL
+        </button>
+        <button id="sideWinderMaze">
+          MAZE 2
+        </button>
+        <button id="brush">
+          BRUSH
+          <div id="brushCircle"></div>
+        </button>
+        <button id="eraser">
+          ERASER
+          <div id="eraserCircle"></div>
+        </button>
+        <input type="range" min="0" max="5" value="1" class="slider" id="brushSize">
+        <input type="range" min="0" max="5" value="2" class="slider" id="eraserSize">
+      </div>
+
+      <div id="infoContainer">
+
+      </div>
+
+    </div>
+    <!-- <script src="https://cdn.socket.io/3.1.3/socket.io.min.js" integrity="sha384-cPwlPLvBTa3sKAgddT6krw0cJat7egBga3DJepJyrLl4Q9/5WLra3rrnMcyTyOnh" crossorigin="anonymous"></script>
+    <script>
+      var socket = io();
+    </script> -->
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

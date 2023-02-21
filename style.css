@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(61, 66, 82);
+  white-space: nowrap;
+  height: 100%;
+}
+
+#canvasID {
+  display: inline-block;
+  position: absolute;
+  border: 1px solid black;
+}
+
+#rightSide {
+  position: absolute;
+  right: 0px;
+  display: inline-block;
+  white-space: normal;
+  height: 100%;
+}
+
+#Minimap {
+  display: inline-block;
+  outline: 1px solid black;
+}
+
+#nodeMap {
+  display:inline-block;
+  outline: 1px solid black;
+}
+
+#infoContainer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+#buttonsContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: 100px;
+}
+
+button {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  border-radius: 0px;
+  color: white;
+  font-size: 2vw;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+#AStar {
+  background-color: orange;
+}
+#ClearCanvas {
+  background-color: #00AC15;
+}
+#binaryTreeMaze {
+  background-color: #9FD547;
+}
+#GreedyBestFirst {
+  background-color: #C362FB;
+}
+#clearSolution {
+  background-color: #3566FF;
+}
+#sideWinderMaze {
+  background-color: #628CFB;
+}
+#brush {
+  background-color: #FF4999;
+}
+#eraser {
+  background-color: #6800FF;
+}
+
+#brushCircle {
+  position: absolute;
+  left: 24%;
+  height: 7px;
+  width: 7px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#eraserCircle {
+  position: absolute;
+  left: 74%;
+  height: 7px;
+  width: 7px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.startstopA {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  left: 25%;
+  transform: translate(-50%, 0%);
+}
+
+.startstopB {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  left: 75%;
+  transform: translate(-50%, 0%);
+}
+
+#overlay {
+  position: fixed;
+  display: inline-block;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(61, 66, 82);
+  z-index: 2;
+}
+
+#sticker {
+  position: absolute;
+  width: 35vw;
+  height: 75vh;
+  left: 50vw;
+  top: 45vh;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: -10;
+  border-radius: 10px;
+}
+
+.startText {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  position: relative;
+  left: 50%;
+  width: 25vw;
+  transform: translate(-50%, 0%);;
+}
+
+#instructionsTitle {
+  top: 10%;
+  font-size: 3vw;
+  text-align: center;
+}
+
+#instructions {
+  white-space: normal;
+  font-size: 1.3vw;
+  top: 12%;
+  overflow-wrap: normal;
+}
+
+#wantsMinimaps, #doesNotWantMinimaps {
+  background-color: orange;
+  border-radius: 5px;
+  font-size: 15px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: inline-block;
+  word-wrap: break-word;
+}
+
+/* #wantsMinimaps {
+  bottom: 10%;
+}
+
+#doesNotWantMinimaps {
+  bottom: 20%;
+} */
+
+#doesNotWantMinimaps {
+  font-size: 3vw;
+  bottom: 10%;
+}
+
+#wantsMinimaps {
+  display: none;
+}
+
+#requirements {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  bottom: 5vh;
+  left: 50vw;
+  transform: translate(-50%, 0%);
+  font-size: 2vw;
+  color: white;
+}
+
+/* #brushSize, #eraserSize {
+  position: relative;
+  width: 100%;
+  top: 50%;
+  height: 7px;
+  outline: none;
+  border-radius: 10px;
+  transform: translate(0%, -50%);
+} */
+
+
+/* #introQuestion {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, 0%);
+  color: white;
+}
+
+#doesNotWantMinimaps {
+  position: absolute;
+  left: 43%;
+  top: 50%;
+  background-color: rgb(61, 66, 82);
+}
+
+#wantsMinimaps {
+  position: absolute;
+  left: 53%;
+  top: 50%;
+  background-color: rgb(61, 66, 82);
+} */
